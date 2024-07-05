@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Our Mission</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+  font-family:arial;
+  color: black;
+
+}
+
+/* Menu code */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: ;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: #f2f2f2;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: lightgray;
+  color: ;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: ;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: ;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* end menu code */
+}
+*/
+
+/* start of form */
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  color: black;
+}
+
+
+/* end of form */
+body {
+  background-color: LightSkyBlue;
+}
+
+/* Style the header */
+.header {
+  background-color: ;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+</style>
+</head>
+ <!-- Load icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- The form -->
+  <form class="example" action="Search.html" target="_blank">
+  <input type="text" placeholder="Search.." name="Search">
+  <button type="Search"><i class="fa fa-search"></i></button>
+</form>
+<html>
+<head>
+<img src="images/Met office.png" alt="Met office" style="width:45%;">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+  </div>
+</div>
+<body onload="updateTime(); setInterval('updateTime()', 1000)">
+
+<div class="header">
+  <img src="images/Banner.PNG" alt="Afloat Banner" style="width:100%;">
+  <p></p>
+</div>
+ 
+  <p id="time_span">Loading...</p>
+<script>
+function updateTime(){
+    var currentTime = new Date()
+    var hours = currentTime.getHours()
+    var minutes = currentTime.getMinutes()
+    if (minutes < 10){
+        minutes = "0" + minutes
+    }
+    var t_str = hours + ":" + minutes + " ";
+    if(hours > 11){
+        t_str += "PM";
+    } else {
+        t_str += "AM";
+    }
+    document.getElementById('time_span').innerHTML = t_str;
+}
+setInterval(updateTime, 1000);
+
+</script>
+<p style="font-size:40px;"><b><i>"To fail to prepare, is to prepare to fail.</b></i>"</p>
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="maps.html">Maps</a>
+  <a href="news.html">News</a>
+  <a href="advice.html">Advice</a>
+  <a href="more about us.html">More About Us</a>
+  <a href="services.html">Services</a>
+</div>
+
+<div class="row">
+  <div class="column">
+    <h1>Our Mission</h1>
+	<h2>Who we are and what we do</h2>
+    <p>We are Afloat, we are based in Plymouth and we are promoting safety towards water sports on beaches, as it is the RNLI's 200th birthday this year and they have saved 146,277 lives during this time, in the Summer 2021 RNLI saved the highest number of lives during water sports incidents in 19 years.</p>
+	<h1>Our Mission</h1>
+	<p>Our mission is to bring the number of water sports incidents down and save more people, there are many water sports incidents each year. We are trying our best to promote this and save more lives each year. In addition to this we are also trying to promote that children are not left alone on the beaches and high risk of drowning, also keeping the inflatables for the swimming pool and not the beach.<p/>
+	<p>Another part of our mission is to support seafarers, maritime professionals, and recreational sailors in navigating the waters with confidence and competence.</p>
+	
+	<h1></h1>
+	<p><p/>
+	
+  </div>
+  
+  <div class="column">
+    <h2></h2>
+    <p></p>
+	
+	</div>
+<html>
+<body>
+
+</body>
+</html>

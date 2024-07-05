@@ -1,0 +1,10 @@
+* {
+    cursor: url("images/vector-surfboard-small-removebg-preview.png"), default;
+}
+
+.trail {
+    position: absolute;
+    height: 6px; width: 6px;
+    border-radius: 3px;
+    background: teal;
+ }
